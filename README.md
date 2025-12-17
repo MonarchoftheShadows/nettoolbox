@@ -2,7 +2,7 @@
 
 A comprehensive, modern network analysis, exploitation, and monitoring toolbox designed for cybersecurity professionals and enthusiasts.
 
-![NetToolbox Banner](https://img.shields.io/badge/NetToolbox-v1.0-blue) ![Python](https://img.shields.io/badge/Python-3.6%2B-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
+![NetToolbox Banner](https://img.shields.io/badge/NetToolbox-v1.0-blue) ![Python](https://img.shields.io/badge/Python-3.6%2B-green)
 ![NetToolBox](https://github.com/user-attachments/assets/16e885f4-e41d-44eb-998b-ce4d3207244c)
 
 ## ✨ Features
@@ -256,5 +256,6 @@ This tool is for educational and authorized testing purposes only. The developer
 **Made with ❤️ by the NetToolbox project Team**
 
 *Stay secure, scan responsibly! 🔐*
+
 
 
