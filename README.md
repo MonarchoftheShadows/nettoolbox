@@ -228,7 +228,11 @@ flake8 .
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is released under the GNU General Public License (GPL).
+
+You are free to use, modify, and distribute this software
+Derivative works must remain open-source under the GPL
+There is no warranty of any kind
 
 ## 📞 Support
 
@@ -252,4 +256,5 @@ This tool is for educational and authorized testing purposes only. The developer
 **Made with ❤️ by the NetToolbox project Team**
 
 *Stay secure, scan responsibly! 🔐*
+
 
