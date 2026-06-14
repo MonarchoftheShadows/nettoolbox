@@ -104,10 +104,10 @@ pip install -r requirements.txt
 ### Basic Usage
 ```bash
 # Run the main application
-python main.py
+python Main.py
 
 # With specific Python version
-python3 main.py
+python3 Main.py
 ```
 
 ### Example Commands
