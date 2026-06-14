@@ -51,6 +51,25 @@ class NetToolbox:
         # Ensure logs directory exists
         os.makedirs("logs", exist_ok=True)
         os.makedirs("results", exist_ok=True)
+    def set_terminal_size():
+        import sys, os, subprocess
+        cols, rows = 100, 33
+        if sys.platform == "win32":
+            import ctypes
+            kernel32 = ctypes.windll.kernel32
+            # Set buffer and window size
+            kernel32.SetConsoleScreenBufferSize(kernel32.GetStdHandle(-11), ctypes.c_uint32(cols | (rows << 16)))
+            kernel32.SetConsoleWindowInfo(
+                kernel32.GetStdHandle(-11),
+                True,
+                ctypes.byref((ctypes.c_short * 8)(0, 0, cols - 1, rows - 1, 0, 0, 0, 0))
+            )
+            os.system(f"mode con: cols={cols} lines={rows}")
+        else:
+            # Linux/macOS: use escape sequence (resizable after this)
+            sys.stdout.write(f"\033[8;{rows};{cols}t")
+            sys.stdout.flush()
+
     
     def display_banner(self):
         # ... (existing code remains unchanged)
@@ -1959,6 +1978,7 @@ Users are responsible for complying with all applicable laws and regulations.
 def main():
     """Application entry point."""
     # Check Python version
+    NetToolbox.set_terminal_size()
     if sys.version_info < (3, 6):
         print("This application requires Python 3.6 or higher")
         sys.exit(1)
